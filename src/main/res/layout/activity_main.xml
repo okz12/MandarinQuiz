@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="textEnd">
+
+    <Button
+        style="@style/Widget.WearDiag.TextView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="top"
+        android:id="@+id/topButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/rightButton"
+        android:onClick="onClick"
+        android:background="@drawable/button_black"
+        android:clickable="true" />
+
+    <Button
+        style="@style/Widget.WearDiag.TextView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="bottom"
+        android:id="@+id/bottomButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rightButton"
+        android:onClick="onClick"
+        android:background="@drawable/button_black"
+        android:clickable="true" />
+
+    <Button
+        style="@style/Widget.WearDiag.TextView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="right"
+        android:id="@+id/rightButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/charMandarin"
+        android:onClick="onClick"
+        android:background="@drawable/button_black"
+        android:clickable="true" />
+
+    <Button
+        style="@style/Widget.WearDiag.TextView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="left"
+        android:id="@+id/leftButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/charMandarin"
+        android:onClick="onClick"
+        android:background="@drawable/button_black"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="M"
+        android:id="@+id/charMandarin"
+        android:layout_alignTop="@+id/rightButton"
+        android:layout_alignBottom="@+id/rightButton"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:phoneNumber="false"
+        android:password="false"
+        android:lines="1"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/streak"
+        android:layout_toEndOf="@+id/topButton"
+        android:textColor="#333333"
+        android:layout_above="@+id/rightButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/charReview"
+        android:lines="3"
+        android:layout_below="@+id/rightButton"
+        android:textColor="#333333"
+        android:layout_toEndOf="@+id/bottomButton" />
+
+</RelativeLayout>
